@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer | BetterBank</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/2104/PNG/512/bank_icon_129525.png">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/369b829a9a.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("transferButton").addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent the form from submitting
+
+                var accountName = document.getElementById("account_name").value;
+                var accountNumber = document.getElementById("account_number").value;
+                var amount = document.getElementById("amount").value;
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+
+                // Check if any of the fields are empty
+                if (accountName === "" || accountNumber === "" || amount === "" || email === "" || password === "") {
+                    alert("Please fill in all the required fields.");
+                } else {
+                    alert("Please contact customer care for assistance.");
+                    window.location.reload(); // Reset the webpage
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="box form-box">
+            <header>Transfer</header>
+            <form action="Pop-up.html" method="get">
+                <div class="field input">
+                    <label for="account_name"><i class="fas fa-user-tie"></i>Account Name</label>
+                    <input type="text" name="account_name" id="account_name" autocomplete="off" placeholder="Enter Account Name" required>
+                </div>
+
+                <div class="field input">
+                  <label for="account_number"><i class="fa-solid fa-building-columns"></i>Account Number</label>
+                  <input type="text" name="account_number" id="account_number" autocomplete="off"  placeholder="Enter Account Number" required>
+              </div>
+
+              <div class="field input">
+                <label for="Amount"><i class="fa-solid fa-money-bill-transfer"></i>Amount</label>
+                <input type="number" name="amount" id="amount" autocomplete="off" placeholder="Enter Amount"required>
+            </div>
+
+                <div class="field input">
+                    <label for="Email"><i class="fas fa-envelope"></i>Email</label>
+                    <input type="email" name="email" id="email" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="password"><i class="fas fa-fingerprint "></i>Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" required>
+                </div>
+
+                <div class="field">
+                    <input type="submit" class="btn" name="submit" id="transferButton" value="Transfer" required>
+                </div>
+                <div class="link">
+                    Having issues? <a href="contact.html">Contact Us Now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

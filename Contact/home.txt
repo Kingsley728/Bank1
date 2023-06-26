@@ -1,0 +1,12 @@
+create a database with the name betterbank
+create a table and name it user
+
+****/*****code*******/
+CREATE TABLE users{
+    id int PRIMARY KEY AUTO_INCREMENT,
+    Username varcher(200),
+    Email varcher(200),
+    Password varcher(200)
+}; 
+note: that it
+

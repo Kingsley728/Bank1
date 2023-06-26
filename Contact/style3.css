@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3e79c2;
+  }
+
+
+
+  .nav{
+      background: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      line-height: 30px;
+      z-index: 100;
+  }
+  .logo{
+      font-size: 25px;
+      font-weight: 900;
+      padding: 0 5px;
+  }
+  .center-links{
+    font-size: 25px;
+    font-weight: 900;
+    padding: 0 10px;
+  }
+  .right-links a{
+      padding: 0 10px;
+  }
+  .btn{
+      height: 35px;
+      background: rgba(76,68,182,0.808);
+      border: 0;
+      border-radius: 5px;
+      font-size: 15px;
+      color: #fff;
+      cursor: pointer;
+      transition: all .3s;
+      margin-top: 10px;
+      padding: 0px 10px;
+  }
+  .btn:hover{
+      opacity: 0.82;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .side-panel {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 300px;
+  }
+
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+.a-content{
+  background-color: #5a4ec7;
+  flex-grow: 1;
+  padding: 10px;
+    display: flex;
+    margin-right: 70%;
+    margin-bottom: 0%
+
+   }
+   .b-content{
+     float: left;
+     background-color: #5a4ec7;
+     flex-grow: 1;
+     padding: 10px;
+       display: flex;
+       margin-bottom: 0%
+
+   }
+   .c-content{
+     float: left;
+    margin-right: 30px;
+     background-color: #5a4ec7;
+     flex-grow: 1;
+     padding: 10px;
+       display: flex;
+          margin-bottom: 0%
+
+   }
+
+  .card {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card h2 {
+    margin-top: 0;
+  }
+  .card ul li{
+    list-style: none;
+  }
+  .card .link-ba{
+      display: flex;
+      flex-direction: row;
+      padding: 0 10px;
+  }
+  .card .link-ba a{
+      text-decoration: none;
+      color: blue;
+  }
+  .card .link-ba a:hover{
+      color: rgba(76,68,182,0.808);
+  }
+  .footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer p {
+      margin: 0;
+      margin-bottom: 40px;
+      padding-bottom: 0;
+    }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BetterBank</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/2104/PNG/512/bank_icon_129525.png">
+    <link rel="stylesheet" href="style2.css">
+    <script>
+        function showConfirmation() {
+            alert("Thank you for contacting us. Please wait for 5 to 10 minutes for a reply.");
+            window.location.reload(); // Reset the webpage
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="send_email.php" method="POST" onsubmit="showConfirmation()"  enctype="text/plain">
+        
+            <h3>Contact Us</h3>
+            <input type="text" name="Name" id="Name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Email Id" required>
+            <textarea name="message" id="message" rows="4" placeholder="How Can we help you"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
